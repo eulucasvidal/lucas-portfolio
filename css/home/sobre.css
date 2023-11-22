@@ -32,5 +32,6 @@
     }
     .sobre-conteudo h2{
         font-size: 1.875rem;
+        transition: 2s;
     }
 }

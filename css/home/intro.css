@@ -6,8 +6,18 @@
     grid-template-columns: 1fr;
     min-height: 700px;
     background: linear-gradient(to right ,var(--cor-s3),var(--cor-s2),var(--cor-s1));
+    background-size: 500% 100%;
+    animation: gradient-animado 4s infinite alternate;
     border-radius: 10px;
     padding: 30px;
+}
+@keyframes gradient-animado{
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
 }
 .intro h1{
     justify-self: center;
@@ -27,6 +37,7 @@
 @media(max-width:800px){
     .intro h1,
     .intro h1 span{
+        transition: 2s;
         font-size: 2.375rem;
     }
     .intro-botoes{
