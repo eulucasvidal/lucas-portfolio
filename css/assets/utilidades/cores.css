@@ -2,6 +2,7 @@
     --cor-p1:#FFFFFF;
     --cor-p2:#0D0D0D;
 
+    --bg-global:#FAFAF9;
     --cor-s1:#F0EBE3;
     --cor-s2:#C9C5BE;
     --cor-s3:#737373;
@@ -15,6 +16,9 @@
 }
 
 /* Cores Secundarias do Projeto */
+.bg-global{
+    background-color: var(--bg-global);
+}
 .cor-s1{
     color: var(--cor-s1);
 }

@@ -1,5 +1,10 @@
 /* Assets Estilos */
 @import './assets/utilidades/componentes.css';
+@import './assets/utilidades/cores.css';
+@import './assets/utilidades/tipografia.css';
+
+@import './assets/botoes/btn-curriculo.css';
+
 
 /* Global Estilos */
 @import './global/global.css';
@@ -7,3 +12,4 @@
 
 /* Home Estilos */
 @import './home/header.css';
+@import './home/intro.css';

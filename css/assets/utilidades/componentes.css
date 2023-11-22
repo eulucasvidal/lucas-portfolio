@@ -8,7 +8,13 @@
     font: 500 1.125rem/1.2 'Inter', sans-serif;
     text-transform: uppercase;
 }
-.logo > span{
+.detalhe{
     color:#FBBF24;
     border-bottom: 1px solid currentColor;
+}
+
+.titulo{
+    font: 300 3.75rem/1.2 'Inter', sans-serif;
+    text-align: center;
+    max-width: 28ch;
 }
