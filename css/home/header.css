@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+.header-menu a{
+    padding: 5px 10px;
+    text-transform: uppercase;
+    font: 400 0.875rem/1.2 'Inter', sans-serif;
+    color: var(--cor-p2);
+}
