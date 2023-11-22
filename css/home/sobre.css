@@ -1,0 +1,27 @@
+.sobre-bg{
+    background: var(--bg-global);
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.sobre-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-content: center;
+    gap: 30px;
+}
+.sobre-container img{
+    border-radius: 10px;
+}
+.sobre-conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
