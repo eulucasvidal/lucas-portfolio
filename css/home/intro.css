@@ -9,7 +9,7 @@
     border-radius: 10px;
     padding: 30px;
 }
-.intro > h1{
+.intro h1{
     justify-self: center;
     align-self: center;
 }
@@ -24,4 +24,14 @@
     align-items: center;
     gap: 45px;
 }
-
+@media(max-width:800px){
+    .intro h1,
+    .intro h1 span{
+        font-size: 2.375rem;
+    }
+    .intro-botoes{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+}

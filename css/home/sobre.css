@@ -25,3 +25,12 @@
     flex-direction: column;
     gap: 30px;
 }
+@media(max-width:800px){
+    .sobre-container{
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+    .sobre-conteudo h2{
+        font-size: 1.875rem;
+    }
+}

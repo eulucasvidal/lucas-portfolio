@@ -20,3 +20,15 @@
     font: 400 0.875rem/1.2 'Inter', sans-serif;
     color: var(--cor-p2);
 }
+.btn-mobile{
+    display: none;
+}
+
+@media(max-width:800px){
+    .btn-mobile{
+        display: block;
+    }
+    .header-menu{
+        display: none;
+    }
+}
