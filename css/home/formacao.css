@@ -1,0 +1,30 @@
+.formacao{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+.formacao-itens {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-content: center;
+  justify-content: center;
+}
+.formacao-conteudo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #C9C5BE;
+}
+@media (max-width: 800px) {
+  .formacao-itens {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .formacao-conteudo {
+    gap: 25px;
+    text-align: center;
+  }
+}
