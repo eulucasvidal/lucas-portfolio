@@ -9,7 +9,7 @@
     background-size: 500% 100%;
     animation: gradient-animado 4s infinite alternate;
     border-radius: 10px;
-    padding: 30px;
+    padding: 15px;
 }
 @keyframes gradient-animado{
     0%{
@@ -23,10 +23,12 @@
     justify-self: center;
     align-self: center;
 }
-.intro-botoes{
+.intro-social-midia{
     display: flex;
-    align-items: end;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
 .social-midia{
     display: flex;
@@ -35,10 +37,13 @@
     gap: 45px;
 }
 @media(max-width:800px){
+    .intro{
+        border-radius: 5px;
+    }
     .intro h1,
     .intro h1 span{
         transition: 2s;
-        font-size: 2.375rem;
+        font-size: 2.125rem;
     }
     .intro-botoes{
         display: grid;

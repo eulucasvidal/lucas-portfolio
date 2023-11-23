@@ -34,4 +34,7 @@
         font-size: 1.875rem;
         transition: 2s;
     }
+    .sobre-container img{
+        border-radius: 5px;
+    }
 }

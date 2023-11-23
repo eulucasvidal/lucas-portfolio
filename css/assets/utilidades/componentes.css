@@ -25,3 +25,8 @@
 .subt-h3 span{
     color: var(--cor-s3);
 }
+@media(max-width:800px){
+    .container{
+        padding: 15px;
+    }
+}
