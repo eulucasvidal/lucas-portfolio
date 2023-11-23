@@ -1,0 +1,40 @@
+.projetos {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.projetos-conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.projetos-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.projetos-itens img {
+  border-radius: 10px;
+}
+.projetos-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .projetos-conteudo {
+    grid-template-columns: 1fr;
+  }
+  .projetos-itens {
+    gap: 5px;
+  }
+  .projetos-itens img {
+    border-radius: 5px;
+  }
+}
