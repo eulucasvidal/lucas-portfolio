@@ -23,13 +23,6 @@
     justify-self: center;
     align-self: center;
 }
-.intro-social-midia{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
 .social-midia{
     display: flex;
     flex-direction: row;

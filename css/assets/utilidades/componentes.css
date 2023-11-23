@@ -25,6 +25,15 @@
 .subt-h3 span{
     color: var(--cor-s3);
 }
+.container-social-midia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    text-transform: uppercase;
+    color: var(--cor-s3);
+}
 @media(max-width:800px){
     .container{
         padding: 15px;
