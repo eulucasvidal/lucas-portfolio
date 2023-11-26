@@ -3,7 +3,9 @@
 @import './assets/utilidades/cores.css';
 @import './assets/utilidades/tipografia.css';
 
+/*Assets Botoes */
 @import './assets/botoes/btn-curriculo.css';
+@import './assets/botoes/menu-mobile.css';
 
 
 /* Global Estilos */
