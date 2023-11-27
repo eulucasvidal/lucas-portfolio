@@ -27,4 +27,7 @@
   .projetos-itens img {
     border-radius: 5px;
   }
+  .projetos-info{
+    font-size: 0.875rem;
+  }
 }
