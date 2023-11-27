@@ -1,46 +1,61 @@
-.intro-bg{
-    background: var(--bg-global);
+.intro-bg {
+  background: var(--bg-global);
 }
-.intro{
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  min-height: 700px;
+  background: linear-gradient(
+    to right,
+    var(--cor-s3),
+    var(--cor-s2),
+    var(--cor-s1),
+    var(--cor-s3),
+    var(--cor-s2),
+    var(--cor-s3)
+  );
+  background-size: 500% 100%;
+  animation: gradient-animado 4s infinite alternate;
+  border-radius: 10px;
+  padding: 15px;
+}
+@keyframes gradient-animado {
+  0% {
+    background-position-x: 0%;
+  }
+  50% {
+    background-position-x: 50%;
+  }
+  100% {
+    background-position-x: 100%;
+  }
+}
+.intro h1 {
+  justify-self: center;
+  align-self: center;
+}
+.social-midia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+}
+@media (max-width: 800px) {
+  .intro {
+    border-radius: 5px;
+    gap: 50px;
+  }
+  .intro h1,
+  .intro h1 span {
+    transition: 2s;
+    font-size: 2.125rem;
+  }
+  .intro-botoes {
     display: grid;
-    grid-template-columns: 1fr;
-    min-height: 700px;
-    background: linear-gradient(to right ,var(--cor-s3),var(--cor-s2),var(--cor-s1));
-    background-size: 500% 100%;
-    animation: gradient-animado 4s infinite alternate;
-    border-radius: 10px;
-    padding: 15px;
-}
-@keyframes gradient-animado{
-    0%{
-        background-position-x: 0%;
-    }
-    100%{
-        background-position-x: 100%;
-    }
-}
-.intro h1{
-    justify-self: center;
-    align-self: center;
-}
-.social-midia{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 45px;
-}
-@media(max-width:800px){
-    .intro{
-        border-radius: 5px;
-    }
-    .intro h1,
-    .intro h1 span{
-        transition: 2s;
-        font-size: 2.125rem;
-    }
-    .intro-botoes{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
+    justify-content: center;
+  }
 }
