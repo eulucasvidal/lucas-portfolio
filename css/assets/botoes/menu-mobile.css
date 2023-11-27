@@ -6,26 +6,12 @@
   background: none;
   text-transform: uppercase;
   cursor: pointer;
+  color: var(--cor-p2);
 }
 
 @media (max-width: 800px) {
   [data-menu="button"] {
     display: block;
-  }
-  .nav-hamburguer{
-    display: block;
-    border-top: 2px solid;
-    width: 15px;
-  }
-  .nav-hamburguer::after,
-  .nav-hamburguer::before{
-    content: "";
-    width: 15px;
-    height: 2px;
-    margin-top: 10px;
-    position: relative;
-    transition: 0.8s;
-    background: currentColor;
   }
   [data-menu="button"].ativo .header-menu {
     display: flex;
