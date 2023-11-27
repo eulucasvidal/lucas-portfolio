@@ -17,15 +17,15 @@
   }
   .nav-hamburguer {
     display: block;
-    border-top: 1px solid;
-    width: 12px;
+    border-top: 2px solid;
+    width: 15px;
   }
   .nav-hamburguer::after,
   .nav-hamburguer::before {
     content: "";
     display: block;
-    height: 1px;
-    width: 12px;
+    height: 2px;
+    width: 15px;
     background: currentColor;
     transition: 0.8s;
     position: relative;
@@ -39,6 +39,6 @@
   }
   [data-menu="button"].ativo .nav-hamburguer::after {
     transform: rotate(-135deg);
-    top: -4px;
+    top: -5px;
   }
 }
