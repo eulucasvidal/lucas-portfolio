@@ -11,9 +11,34 @@
 
 @media (max-width: 800px) {
   [data-menu="button"] {
-    display: block;
-  }
-  [data-menu="button"].ativo .header-menu {
     display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .nav-hamburguer {
+    display: block;
+    border-top: 1px solid;
+    width: 12px;
+  }
+  .nav-hamburguer::after,
+  .nav-hamburguer::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 12px;
+    background: currentColor;
+    transition: 0.8s;
+    position: relative;
+    margin-top: 3px;
+  }
+  [data-menu="button"].ativo .nav-hamburguer {
+    border-color: transparent;
+  }
+  [data-menu="button"].ativo .nav-hamburguer::before {
+    transform: rotate(135deg);
+  }
+  [data-menu="button"].ativo .nav-hamburguer::after {
+    transform: rotate(-135deg);
+    top: -4px;
   }
 }
