@@ -10,6 +10,7 @@
 
 /* Global Estilos */
 @import './global/global.css';
+@import './global/scroll-suave.css';
 
 
 /* Home Estilos */

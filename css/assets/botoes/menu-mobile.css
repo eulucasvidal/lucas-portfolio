@@ -1,4 +1,4 @@
-[data-menu="button"] {
+.js [data-menu="button"] {
   display: none;
   border: none;
   padding:10px;
@@ -9,7 +9,7 @@
 }
 
 @media (max-width: 800px) {
-  [data-menu="button"] {
+  .js [data-menu="button"] {
     display: block;
   }
   .nav-hamburguer {
@@ -28,17 +28,17 @@
     position: relative;
     margin-top: 3px;
   }
-  [data-menu="button"].ativo{
+  .js [data-menu="button"].ativo{
     background: var(--cor-s1);
     transition: 0.8s;
   }
-  [data-menu="button"].ativo .nav-hamburguer {
+  .js [data-menu="button"].ativo .nav-hamburguer {
     border-color: transparent;
   }
-  [data-menu="button"].ativo .nav-hamburguer::before {
+  .js [data-menu="button"].ativo .nav-hamburguer::before {
     transform: rotate(135deg);
   }
-  [data-menu="button"].ativo .nav-hamburguer::after {
+  .js [data-menu="button"].ativo .nav-hamburguer::after {
     transform: rotate(-135deg);
     top: -5px;
   }
