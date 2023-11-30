@@ -7,8 +7,6 @@
     align-items: start;
     justify-content: center;
     gap: 30px;
-    padding-top: 100px;
-    padding-bottom: 100px;
 }
 .sobre-container{
     display: grid;

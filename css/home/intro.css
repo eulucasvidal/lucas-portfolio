@@ -50,7 +50,7 @@
   }
   .intro h1,
   .intro h1 span {
-    transition: 2s;
+    transition: 1s;
     font-size: 2.125rem;
   }
   .intro-botoes {

@@ -3,6 +3,7 @@
     padding: 30px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 .logo{
     font: 500 1.125rem/1.2 'Inter', sans-serif;

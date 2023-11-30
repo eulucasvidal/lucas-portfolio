@@ -1,20 +1,19 @@
 export default function initScrollSuaveSections() {
-  const sections = document.querySelectorAll(".js-scroll");
+  const sections = document.querySelectorAll("[data-anime]");
 
   if (sections.length) {
-    const windowMetade = window.innerHeight * 0.7;
+    const windowMetade = window.innerHeight * 0.75;
 
     function animaScroll() {
       sections.forEach((section) => {
         const sectionTop = section.getBoundingClientRect().top;
-        const sectionVisivel = sectionTop - windowMetade < 0;
+        const sectionVisivel = (sectionTop - windowMetade) < 1;
         if (sectionVisivel) {
-          section.classList.add("ativo");
+          section.classList.add("animate");
         }
       });
     }
-    animaScroll();
-
     window.addEventListener("scroll", animaScroll);
+    animaScroll();
   }
 }
