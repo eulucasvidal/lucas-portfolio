@@ -24,17 +24,17 @@
           <span class="nav-hamburguer"></span>
         </button>
         <ul class="header-menu">
-          <li><a href="#">sobre</a></li>
-          <li><a href="#">projetos</a></li>
-          <li><a href="#">formação</a></li>
-          <li><a href="#">contato</a></li>
+          <li><a href="#sobre">sobre</a></li>
+          <li><a href="#projetos">projetos</a></li>
+          <li><a href="#formacao">formação</a></li>
+          <li><a href="#contato">contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
     <article>
-      <section class="container js-scroll" data-anime="left">
+      <section class="container" data-anime="left">
         <div class="intro">
           <h1 class="titulo" data-anime="down">
             Olá, meu nome é Lucas Gonçalves, sou um
@@ -70,7 +70,7 @@
         </div>
       </section>
     </article>
-    <article>
+    <article id="sobre">
       <section class="sobre container" data-anime="left">
         <h3 class="subt-h3">sobre <span>mim</span></h3>
         <div class="sobre-container">
@@ -96,12 +96,15 @@
               aplicações por meio de cursos online e na graduação em análise e
               desenvolvimento de sistemas.
             </p>
-            <button class="btn-curriculo">Baixar currículo</button>
+            <a class="link-curriculo" href="./img/curriculo/curriculo-lucas.pdf" download="curriculo-lucas">
+              <button class="btn-curriculo font-xs-b">Baixar PDF curriculo</button>
+              <i><img src="img/icones/download.svg" alt=""></i>
+            </a>
           </div>
         </div>
       </section>
     </article>
-    <article>
+    <article id="projetos">
       <section class="projetos container" data-anime="left">
         <h3 class="subt-h3">Principais <span>Projetos</span></h3>
         <div class="projetos-itens" data-anime="up">
@@ -126,15 +129,15 @@
           </div>
         </div>
         <div class="projetos-itens" data-anime="up">
-          <img src="img/img-projetos/projetos.png" alt="projeto 1" height="580" width="1200" />
+          <img src="img/img-projetos/projetos-embreve.png" alt="projeto 1" height="580" width="1200" />
           <div class="projetos-info font-m">
-            <span>Projeto x</span>
+            <span>Em Breve</span>
             <span>23/11/2023</span>
           </div>
         </div>
       </section>
     </article>
-    <article>
+    <article id="formacao">
       <section class="formacao container" data-anime="up">
         <h3 class="subt-h3">Form<span>ação</span></h3>
         <div class="formacao-itens">
@@ -189,7 +192,7 @@
         </div>
       </section>
     </article>
-    <aside>
+    <aside id="contato">
       <section class="contato container" data-anime="up">
         <h1 class="titulo">
           Entrar <span class="font-xxl-b">em contato.</span>

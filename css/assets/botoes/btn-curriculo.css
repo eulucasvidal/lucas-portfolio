@@ -1,9 +1,16 @@
+.link-curriculo{
+    display: flex;
+}
 .btn-curriculo{
-    border: none;
     background: none;
-    text-transform: uppercase;
-    color: var(--cor-p2);
-    font: 400 0.875rem/1.2 'Inter', sans-serif;
+
+    border: none;
     cursor: pointer;
-    width: max-content;
+}
+.link-curriculo i img{
+    padding: 5px 8px;
+}
+.link-curriculo:hover i img{
+    transition: 0.4s ease-in-out;
+    transform: translateY(4px);
 }
