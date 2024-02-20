@@ -1,3 +1,21 @@
+.bg-projetos{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 15px;
+}
+.bg-item-1{
+  background: url(../../img/img-projetos/bg-itens-projeto/bg-inkbill.png);
+}
+.bg-item-2{
+  background: url(../../img/img-projetos/bg-itens-projeto/bg-oceanbank.png);
+}
+.bg-item-3{
+  background: url(../../img/img-projetos/bg-itens-projeto/bg-pandasneakears.png);
+}
+.bg-item-4{
+  background: url(../../img/img-projetos/bg-itens-projeto/bg-embreve.png);
+}
 .projetos {
   display: grid;
   grid-template-columns: 1fr;
@@ -7,27 +25,45 @@
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.projetos-itens {
+.projetos-itens{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 30px;
+}
+.info-projeto{
   display: flex;
   flex-direction: column;
+  padding: 30px;
   gap: 15px;
+  color: var(--cor-p1);
+  max-width: 65ch;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
 }
-.projetos-itens img {
-  border-radius: 10px;
+.span-projetos-item,
+.btn-projetos-item
+{
+  background: var(--cor-p2);
+  font: 400 0.625rem/1.2 'Inter', sans-serif;
+  padding: 4px 8px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  width: max-content;
 }
-.projetos-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.titulo-projetos-item{
+  font: 600 1.875rem/1.2 'Inter', sans-serif;
+  text-transform: uppercase;
+}
+.btn-projetos-item{
+  cursor: pointer;
+  border: 1px solid var(--cor-s3);
+  color: var(--cor-p1);
 }
 @media (max-width: 800px) {
-  .projetos-itens {
-    gap: 5px;
-  }
-  .projetos-itens img {
-    border-radius: 5px;
-  }
-  .projetos-info{
-    font-size: 0.875rem;
+  .projetos-itens{
+    grid-template-columns: 1fr;
   }
 }
