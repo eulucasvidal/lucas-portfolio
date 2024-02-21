@@ -3,7 +3,7 @@
 }
 .btn-curriculo{
     background: none;
-
+    color: var(--cor-p2);
     border: none;
     cursor: pointer;
 }
