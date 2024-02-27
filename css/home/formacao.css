@@ -15,20 +15,68 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding:15px 0px;
+  padding:60px 0px;
   border-bottom: 1px solid #C9C5BE;
+  cursor: pointer;
+  position: relative;
 }
+.formacao-conteudo::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: 0%;
+
+  width: 0%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  transition: .7s ease-in-out;
+}
+
+.formacao-conteudo:hover:before{
+  width: 100%;
+}
+.forma-bg1::before{
+  background-image: url(../../img/certificados/curso-em-video/logica-de-programacao.png);
+}
+.forma-bg2::before{
+  background-image: url(../../img/certificados/curso-em-video/html-css.png);
+}
+.forma-bg3::before{
+  background-image: url(../../img/certificados/origamid/certificado-html-css.png);
+}
+.forma-bg4::before{
+  background-image: url(../../img/certificados/origamid/certificado-ui-design.png);
+}
+.forma-bg5::before{
+  background-image: url(../../img/certificados/origamid/certificado-flexbox.png);
+}
+.forma-bg6::before{
+  background-image: url(../../img/certificados/origamid/certificado-grid-layout.png);
+}
+.forma-bg7::before{
+  background-image: url(../../img/certificados/origamid/certificado-js-es6.png);
+}
+
+
 @media (max-width: 800px) {
   .formacao-itens {
     grid-template-columns: 1fr;
     gap: 30px;
   }
   .formacao-conteudo {
+    padding: 8px;
+    height: 60px;
     gap: 25px;
     text-align: start;
   }
   .formacao-conteudo span{
     max-width: 12ch;
     text-align: center;
+  }
+  .formacao-conteudo::before{
+    background-size: cover;
   }
 }
