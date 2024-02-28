@@ -37,12 +37,7 @@
   justify-self: center;
   align-self: center;
 }
-.social-midia {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 45px;
-}
+
 @media (max-width: 800px) {
   .intro {
     border-radius: 5px;
