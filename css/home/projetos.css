@@ -44,26 +44,54 @@
   backdrop-filter: blur(5px);
   border-radius: 30px;
 }
-.span-projetos-item,
-.btn-projetos-item
-{
+.span-projetos-item{
   background: var(--cor-p2);
-  font: 400 0.625rem/1.2 'Inter', sans-serif;
-  padding: 4px 8px;
+  font: 400 0.725rem/1.2 'Inter', sans-serif;
+  padding: 6px 12px;
   border-radius: 5px;
   text-transform: uppercase;
   width: max-content;
+}
+.btns-projeto{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 .titulo-projetos-item{
   font: 600 1.875rem/1.2 'Inter', sans-serif;
   text-transform: uppercase;
 }
 .btn-projetos-item{
+  display: block;
+  position: relative;
   cursor: pointer;
-  border: 1px solid var(--cor-s3);
+  padding: 6px 12px;
+  font: 600 0.725rem/1.2 'Inter', sans-serif;
+  text-transform: capitalize;
+  border: 2px solid aqua;
+  background: transparent;
   color: var(--cor-p1);
 }
-@media (max-width: 800px) {
+.btn-projetos-item::before{
+  content: '';
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 0%;
+  height: 100%;
+  background-color: aqua;
+  background-size: cover;
+  transition: .5s ease;
+  z-index: -1;
+}
+.btn-projetos-item:hover{
+  color: var(--cor-p2);
+}
+.btn-projetos-item:hover:before{
+  width: 100%;
+}
+
+@media (max-width: 800px){
   .projetos-itens{
     grid-template-columns: 1fr;
   }

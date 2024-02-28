@@ -1,5 +1,6 @@
 .link-curriculo{
     display: flex;
+    width: max-content;
 }
 .btn-curriculo{
     background: none;
