@@ -41,6 +41,7 @@
   min-width: 30ch;
   max-width: 65ch;
   background-color: transparent;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   border-radius: 30px;
 }
