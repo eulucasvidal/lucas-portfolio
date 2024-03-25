@@ -4,11 +4,11 @@
 @import './assets/utilidades/tipografia.css';
 @import './assets/utilidades/animar-scroll.css';
 @import './assets/utilidades/texto-infinito.css';
+@import './assets/utilidades/icones.css';
 
 /*Assets Botoes */
-@import './assets/botoes/btn-curriculo.css';
-@import './assets/botoes/menu-mobile.css';
-
+@import './assets/botoes/btn-dark.css';
+@import './assets/botoes/btn-global.css';
 
 /* Global Estilos */
 @import './global/global.css';
@@ -19,5 +19,4 @@
 @import './home/sobre.css';
 @import './home/projetos.css';
 @import './home/formacao.css';
-@import './home/contato.css';
 @import './home/footer.css';

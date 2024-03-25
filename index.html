@@ -4,9 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="./img/icones/logo/favicon-32x32.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/ff7cccf4ba.js" crossorigin="anonymous"></script>
+
   <link rel="preload" href="./css/style.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <script>
@@ -16,109 +20,96 @@
 </head>
 
 <body class="bg-global">
-  <header>
-    <div class="header container">
-      <span class="logo">lucas gonçalves.</span>
-      <nav data-menu="suave">
-        <button data-menu="button">
-          <span class="nav-hamburguer"></span>
-        </button>
-        <ul class="header-menu">
-          <li><a href="#sobre">sobre</a></li>
-          <li><a href="#projetos">projetos</a></li>
-          <li><a href="#formacao">formação</a></li>
-          <li><a href="#contato">contato</a></li>
-        </ul>
-      </nav>
+  <header class="bg-header">
+    <div class="container header">
+      <div>
+        <span class="font-1-xxs cor-2">© Lucas Gonçalves 1998™</span>
+      </div>
+      <div class="header-btns">
+        <div>
+          <input type="checkbox" class="checkbox" id="btn-dark-mode" />
+          <label class="label" for="btn-dark-mode">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+        <div>
+          <input type="checkbox" class="checkbox" id="btn-idioma" />
+          <label class="label" for="btn-idioma">
+            <i class="fas"></i>
+            <i class="fas"></i>
+            <div class="ball"></div>
+          </label>
+        </div>
+      </div>
     </div>
   </header>
   <main>
-    <article>
+    <article id="intro" class="bg-intro">
       <section class="container" data-anime="left">
         <div class="intro">
-          <h1 class="titulo" data-anime="down">
-            Olá, meu nome é Lucas Gonçalves, sou um
-            <span class="font-xxl-b">Desenvolvedor Front-End</span> e
-            <span class="font-xxl-b"> UI Designer </span> transformando ideias
-            em sucesso.
-          </h1>
-
-          <div class="container-social-midia" data-anime="up">
+          <div class="intro-topside">
+            <div>
+              <img src="./img/icones/logo/logo-lucas.svg" alt="logo-lucas">
+            </div>
+            <button class="btn-global links">
+              <a href="#sobre">contato</a>
+              <i class="fa-solid fa-address-card"></i>
+            </button>
+          </div>
+          <div class="intro-txt">
+            <h1 class="titulo-page cor-2" data-anime="down">Olá, eu sou Lucas Gonçalves desenvolvedor Front-End.</h1>
+            <p class="font-1-m cor-2">Desenvolvo sites acessíveis, responsivos, interativos e animados com forte foco em performance.</p>
+          </div>
+          <div class="box-redes-sociais" data-anime="down">
             <div class="texto-infinito">
               <span class="texto-infinito-span">Entrar em contato</span>
               <span class="texto-infinito-span">Entrar em contato</span>
               <span class="texto-infinito-span">Entrar em contato</span>
               <span class="texto-infinito-span">Entrar em contato</span>
             </div>
-            <div>
-              <ul class="social-midia">
-                <li data-anime="left">
-                  <a href="mailto:luccas.lima12@gmail.com" target="_blank"><img src="./img/icones-redes-sociais/email.svg" alt="icone do email" height="24" width="30" /></a>
-                </li>
-                <li data-anime="left">
-                  <a href="https://github.com/eulucasvidal" target="_blank"><img src="./img/icones-redes-sociais/github.svg" alt="icone do github" height="30" width="30" /></a>
-                </li>
-                <li data-anime="left">
-                  <a href="https://www.instagram.com/eu.lucasgoncalves/" target="_blank"><img src="./img/icones-redes-sociais/instagram.svg" alt="icone do instagram" height="30" width="30" /></a>
-                </li>
-                <li data-anime="left">
-                  <a href="https://www.linkedin.com/in/goncalves-lucas/" target="_blank"><img src="./img/icones-redes-sociais/linkedin.svg" alt="icone do linkedin" height="30" width="30" /></a>
-                </li>
-              </ul>
+            <div class="redes-sociais">
+              <div class="icons insta">
+                <a href="https://www.instagram.com/eu.lucasgoncalves/" target="_blank">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+              <div class="icons linkedin">
+                <a href="https://www.linkedin.com/in/goncalves-lucas/" target="_blank">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </div>
+              <div class="icons github">
+                <a href="https://github.com/eulucasvidal" target="_blank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <div class="icons gmail">
+                <a href="mailto:luccas.lima12@gmail.com" target="_blank">
+                  <i class="fa-brands fa-google"></i>
+                </a>
+              </div>
             </div>
-          </div>
-        </div>
-      </section>
-    </article>
-    <article id="sobre">
-      <section class="sobre container" data-anime="left">
-        <h3 class="subt-h3">sobre <span>mim</span></h3>
-        <div class="sobre-container">
-          <div>
-            <img src="./img/img-destaque/eu.png" alt="Imagem ilustrativa do Lucas" height="760" width="570" data-anime="left" />
-          </div>
-          <div class="sobre-conteudo" data-anime="right">
-            <h2 class="font-xx">Uma breve introdução, sobre mim?</h2>
-            <p class="font-x">
-              Sou Lucas Gonçalves, Designer Digital que transforma conceitos
-              em obras-primas digitais. Contador de histórias visual
-              apaixonado que une imaginação e realidade criando designs
-              envolventes e memoráveis.
-            </p>
-            <p class="font-x">
-              Morando na cidade turística de São Roque/SP, comecei trabalhando
-              em empregos variados, como manutenção de internet e area de
-              vendas no shopping. Embora o turismo seja a principal fonte de
-              emprego na região, meu verdadeiro interesse sempre foi a
-              tecnologia. Após conhecer pessoas que trabalhavam com
-              tecnologia, fui apresentado à programação há cerca de 4 anos.
-              Desde então, tenho estudado e me dedicado à criação de
-              aplicações por meio de cursos online e na graduação em análise e
-              desenvolvimento de sistemas.
-            </p>
-            <a class="link-curriculo" href="./img/curriculo/curriculo-lucas.pdf" download="curriculo-lucas">
-              <button class="btn-curriculo font-xs-b">Baixar PDF curriculo</button>
-              <i><img src="img/icones/download.svg" alt="img"></i>
-            </a>
           </div>
         </div>
       </section>
     </article>
     <article id="projetos">
       <section class="projetos container" data-anime="left">
-        <h3 class="subt-h3">Principais <span>Projetos</span></h3>
+        <h3 class="titulo-section detalhe-ponto"><span class="detalhe-cor">principais</span> trabalhos</h3>
         <div class="bg-projetos bg-item-1">
           <div class="projetos-itens">
             <div class="info-projeto">
               <span class="span-projetos-item">inkbill - tattoo</span>
               <h4 class="titulo-projetos-item">o inkbill tattoo um projeto inovador</h4>
-              <p class="font-xs">Desenvolvi uma experiência envolvente utilizando HTML, CSS e JavaScript, onde os clientes podem explorar uma galeria de designs.O projeto visa tornar a escolha da tatuagem mais interativa e personalizada.</p>
+              <p class="font-1-xxs">Desenvolvi uma experiência envolvente utilizando HTML, CSS e JavaScript, onde os clientes podem explorar uma galeria de designs.O projeto visa tornar a escolha da tatuagem mais interativa e personalizada.</p>
               <div class="btns-projeto">
                 <a href="https://inkbill-tattoo.netlify.app/" target="_blank"><button class="btn-projetos-item">ver deploy</button></a>
                 <a href="https://github.com/eulucasvidal/inkbill-tattoo" target="_blank"><button class="btn-projetos-item">ver repositorio</button></a>
               </div>
             </div>
-            <div><img src="img/img-projetos/mockups-projetos/mockup-inkbill.png" alt="Imagem-mockup-inkbill"></div>
+            <div><img src="./img/img-projetos/mockups-projetos/mockup-inkbill.png" alt="Imagem-mockup-inkbill"></div>
           </div>
         </div>
         <div class="bg-projetos bg-item-2">
@@ -126,13 +117,13 @@
             <div class="info-projeto">
               <span class="span-projetos-item">ocean bank</span>
               <h4 class="titulo-projetos-item">ocean bank feito para você</h4>
-              <p class="font-xs">Um portal bancário online desenvolvido com HTML, CSS e JavaScript, proporcionando aos usuários uma experiência segura e intuitiva. O design foca na facilidade de uso, oferecendo uma plataforma confiável para realizar operações bancárias de forma eficiente.</p>
+              <p class="font-1-xxs">Um portal bancário online desenvolvido com HTML, CSS e JavaScript, proporcionando aos usuários uma experiência segura e intuitiva. O design foca na facilidade de uso, oferecendo uma plataforma confiável para realizar operações bancárias de forma eficiente.</p>
               <div class="btns-projeto">
                 <a href="https://ocean-bank.netlify.app/" target="_blank"><button class="btn-projetos-item">ver deploy</button></a>
                 <a href="https://github.com/eulucasvidal/ocean-bank" target="_blank"><button class="btn-projetos-item">ver repositorio</button></a>
               </div>
             </div>
-            <div><img src="img/img-projetos/mockups-projetos/mockup-oceanbank.png" alt="Imagem-mockup-oceanbank"></div>
+            <div><img src="./img/img-projetos/mockups-projetos/mockup-oceanbank.png" alt="Imagem-mockup-oceanbank"></div>
           </div>
         </div>
         <div class="bg-projetos bg-item-3">
@@ -140,7 +131,7 @@
             <div class="info-projeto">
               <span class="span-projetos-item">panda sneakers</span>
               <h4 class="titulo-projetos-item">tudo sobre o mundo dos tenis na sua mão</h4>
-              <p class="font-xs">Explore o mundo do tênis em nosso blog dinâmico, construído com HTML, CSS e JavaScript. Apresentamos análises de calçados, dicas de treino e cobertura de eventos esportivos. Com um design moderno, o blog oferece uma experiência imersiva, mantendo os entusiastas do tênis atualizados sobre as últimas tendências, lançamentos e notícias do mundo esportivo.</p>
+              <p class="font-1-xxs">Explore o mundo do tênis em nosso blog dinâmico, construído com HTML, CSS e JavaScript. Apresentamos análises de calçados, dicas de treino e cobertura de eventos esportivos. Com um design moderno, o blog oferece uma experiência imersiva, mantendo os entusiastas do tênis atualizados sobre as últimas tendências, lançamentos e notícias do mundo esportivo.</p>
               <div class="btns-projeto">
                 <a href="https://panda-sneakers.netlify.app/" target="_blank"><button class="btn-projetos-item">ver deploy</button></a>
                 <a href="https://github.com/eulucasvidal/pandasneakers" target="_blank"><button class="btn-projetos-item">ver repositorio</button></a>
@@ -155,116 +146,158 @@
           <div class="projetos-itens">
             <div class="info-projeto">
               <span class="span-projetos-item">em breve</span>
-              <h4 class="titulo-projetos-item">o inkbill tattoo foi projetado....</h4>
-              <p class="font-xs">Design direction lead on the future e-commerce shopping experience for Pandora that includes product landing pages, product detail pages, cart, checkout and account. This work is ongoing</p>
+              <h4 class="titulo-projetos-item">projeto em breve...</h4>
+              <p class="font-1-xxs">Design direction lead on the future e-commerce shopping experience for Pandora that includes product landing pages, product detail pages, cart, checkout and account. This work is ongoing</p>
               <div class="btns-projeto">
                 <a href="#"><button class="btn-projetos-item">ver deploy</button></a>
                 <a href="#"><button class="btn-projetos-item">ver repositorio</button></a>
               </div>
             </div>
-            <div><img src="img/img-projetos/mockups-projetos/mockup-embreve.png" alt=""></div>
+            <div><img src="./img/img-projetos/mockups-projetos/mockup-embreve.png" alt=""></div>
           </div>
         </div>
       </section>
     </article>
-    <article id="formacao">
-      <section class="formacao container" data-anime="up">
-        <h3 class="subt-h3">Form<span>ação</span></h3>
-        <div class="formacao-itens">
-          <h4 class="font-x cor-s3">Formação Acadêmica</h4>
-          <div>
-            <div class="formacao-conteudo font-xs">
-              <h5 class="font-x cor-s3">Universidade</h5>
-              <span>Uninter</span>
-              <span>2021 - 2023</span>
-            </div>
-            <div class="formacao-conteudo font-xs">
-              <h5 class="font-x cor-s3">Curso</h5>
-              <span>Análise e Desenvolvimento de Sistemas</span>
-              <span>Tecnólogo</span>
-            </div>
-          </div>
+    <article id="sobre" class="bg-sobre">
+      <section class="container sobre" data-anime="left">
+        <div>
+          <img src="./img/img-destaque/eu.png" alt="Imagem ilustrativa do Lucas" height="760" width="570" data-anime="left" />
         </div>
-        <div class="formacao-itens">
-          <h4 class="font-x cor-s3">Cursos Intensivos</h4>
-          <div>
-            <div class="formacao-conteudo font-xs forma-bg1">
-              <h5 class="font-x cor-s3">C & V</h5>
-              <span>Logica de Programação</span>
-              <span>2021 - 2021</span>
-            </div>
-            <div class="formacao-conteudo font-xs forma-bg2">
-              <h5 class="font-x cor-s3">C & V</h5>
-              <span>Introdução ao HTML & CSS</span>
-              <span>2021 - 2022</span>
-            </div>
-            <div class="formacao-conteudo font-xs forma-bg3">
-              <h5 class="font-x cor-s3">Origamid</h5>
-              <span>Introdução ao HTML & CSS</span>
-              <span>2022 - 2023</span>
-            </div>
-            <div class="formacao-conteudo font-xs forma-bg4">
-              <h5 class="font-x cor-s3">Origamid</h5>
-              <span>UX / UI Design</span>
-              <span>2022 - 2023</span>
-            </div>
-            <div class="formacao-conteudo font-xs forma-bg5">
-              <h5 class="font-x cor-s3">Origamid</h5>
-              <span>CSS FlexBox</span>
-              <span>2023 - 2023</span>
-            </div>
-            <div class="formacao-conteudo font-xs forma-bg6">
-              <h5 class="font-x cor-s3">Origamid</h5>
-              <span>CSS Grid Layout</span>
-              <span>2023 - 2023</span>
-            </div>
-            <div class="formacao-conteudo font-xs forma-bg7">
-              <h5 class="font-x cor-s3">Origamid</h5>
-              <span>JavaScript Completo ES6</span>
-              <span>2023 - 2023</span>
+        <div class="sobre-conteudo" data-anime="right">
+          <h3 class="titulo-section cor-2 detalhe-ponto"><span class="detalhe-cor">sobre</span> mim</h3>
+          <p class="font-1-xs cor-3">
+            Sou Lucas Gonçalves, Designer Digital que transforma conceitos
+            em obras-primas digitais. Contador de histórias visual
+            apaixonado que une imaginação e realidade criando designs
+            envolventes e memoráveis.
+          </p>
+          <p class="font-1-xs cor-3">
+            Morando na cidade turística de São Roque/SP, comecei trabalhando
+            em empregos variados, como manutenção de internet e area de
+            vendas no shopping. Embora o turismo seja a principal fonte de
+            emprego na região, meu verdadeiro interesse sempre foi a
+            tecnologia. Após conhecer pessoas que trabalhavam com
+            tecnologia, fui apresentado à programação há cerca de 4 anos.
+            Desde então, tenho estudado e me dedicado à criação de
+            aplicações por meio de cursos online e na graduação em análise e
+            desenvolvimento de sistemas.
+          </p>
+          <div class="sobre-links">
+            <button class="btn-global links">
+              <a href="./img/curriculo/curriculo-lucas.pdf" download="curriculo-lucas">baixar curriculo</a>
+              <i class="fa-solid fa-cloud-arrow-down"></i>
+            </button>
+            <div class="redes-sociais">
+              <div class="icons insta"><a href="https://www.instagram.com/eu.lucasgoncalves/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+              <div class="icons linkedin"><a href="https://www.linkedin.com/in/goncalves-lucas/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+              <div class="icons github"><a href="https://github.com/eulucasvidal" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+              <div class="icons gmail"><a href="mailto:luccas.lima12@gmail.com" target="_blank"><i class="fa-brands fa-google"></a></i></div>
             </div>
           </div>
         </div>
       </section>
     </article>
-    <aside id="contato">
-      <section class="contato container" data-anime="up">
-        <h1 class="titulo">
-          Entrar <span class="font-xxl-b">em contato.</span>
-        </h1>
-        <div class="container-social-midia">
-          <div class="texto-infinito">
-            <span class="texto-infinito-span">Para que possamos conversar mais sobre</span>
-            <span class="texto-infinito-span">Para que possamos conversar mais sobre</span>
-            <span class="texto-infinito-span">Para que possamos conversar mais sobre</span>
+    <article class="formacao-bg" id="formacao">
+      <section class="formacao container">
+        <h3 class="titulo-section detalhe-ponto"><span class="detalhe-cor">experiência</span> acadêmica</h3>
+        <div class="formacao-conteudo">
+          <h4 class="subt-section"><span class="detalhe-cor">ensino</span> superior</h4>
+          <h5 class="titulo-item detalhe-linha">uninter</h5>
+          <div class="formacao-item">
+            <span class="font-1-s">análise e desenvolvimento de sistemas</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
           </div>
-          <div>
-            <ul class="social-midia">
-              <li>
-                <a href="mailto:luccas.lima12@gmail.com" target="_blank"><img src="./img/icones-redes-sociais/email.svg" alt="icone do email" height="24" width="30" /></a>
-              </li>
-              <li>
-                <a href="https://github.com/eulucasvidal" target="_blank"><img src="./img/icones-redes-sociais/github.svg" alt="icone do github" height="30" width="30" /></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/eu.lucasgoncalves/" target="_blank"><img src="./img/icones-redes-sociais/instagram.svg" alt="icone do instagram" height="30" width="30" /></a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/goncalves-lucas/" target="_blank"><img src="./img/icones-redes-sociais/linkedin.svg" alt="icone do linkedin" height="30" width="30" /></a>
-              </li>
-            </ul>
+        </div>
+        <div class="formacao-conteudo">
+          <h4 class="subt-section"><span class="detalhe-cor">cursos</span> intensivos</h4>
+          <h4 class="titulo-item detalhe-linha">curso em video</h4>
+          <div class="formacao-item">
+            <span class="font-1-s">Logica de Programação</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
+          </div>
+          <div class="formacao-item">
+            <span class="font-1-s">introdução html e css</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
+          </div>
+          <div class="formacao-item">
+            <span class="font-1-s">javaScript para iniciantes</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
+          </div>
+        </div>
+        <div class="formacao-conteudo">
+          <h4 class="titulo-item detalhe-linha">origamid</h4>
+          <div class="formacao-item">
+            <span class="font-1-s">introdução ao html e css</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
+          </div>
+          <div class="formacao-item">
+            <span class="font-1-s">css grid layout</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
+          </div>
+          <div class="formacao-item">
+            <span class="font-1-s">css flexBox</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
+          </div>
+          <div class="formacao-item">
+            <span class="font-1-s">javaScript completo eS6</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
+          </div>
+          <div class="formacao-item">
+            <span class="font-1-s">ux / ui design</span>
+            <span class="font-1-s">tecnólogo - 2021 - 2023 </span>
           </div>
         </div>
       </section>
-    </aside>
+    </article>
   </main>
-  <footer>
-    <div class="footer container">
-      <span class="font-xs cor-s3">Desenvolvido por
-        <span class="font-x cor-p2">Lucas Gonçalves</span></span>
-    </div>
+  <footer class="footer-bg">
+    <section class="container footer">
+      <div>
+        <h2 class="titulo-section">Vamos trabalhar juntos?</h2>
+        <a href="#" class="font-1-xxs">luccas.lima12@gmail.com</a>
+      </div>
+
+      <div class="menu-footer">
+        <div>
+          <ul>
+            <li><a href="#" class="links detalhe-link">home</a></li>
+            <li><a href="#" class="links detalhe-link">sobre</a></li>
+            <li><a href="#" class="links detalhe-link">trabalhos</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <ul>
+            <li><a href="#" class="links detalhe-link">contato</a></li>
+            <li><a href="#" class="links detalhe-link">carreira</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-footer">
+        <div>
+          <ul>
+            <li><a href="#" class="links detalhe-link">instagram</a></li>
+            <li><a href="#" class="links detalhe-link">gituHub</a></li>
+            <li><a href="#" class="links detalhe-link">linkedin</a></li>
+          </ul>
+        </div>
+        <div>
+          <span class="font-1-xs detalhe-link">
+            <a href="https://maps.app.goo.gl/PE1dEn5SvQz14wtCA" target="_blank">São Roque - SP</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="menu-footer">
+        <div>
+          <img src="./img/icones/logo/logo-lucas.svg" alt="">
+        </div>
+        <button>top</button>
+      </div>
+    </section>
+    <div class="direitos-reservados">Desenvolvido por Lucas Gonçalves | © 2024 Todos os direitos reservados.</div>
   </footer>
   <script type="module" src="js/script.js"></script>
 </body>
-
 </html>

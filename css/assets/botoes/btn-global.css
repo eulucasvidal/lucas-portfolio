@@ -1,0 +1,28 @@
+.btn-global{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  border: none;
+  width: max-content;
+  padding: 8px;
+  cursor: pointer;
+  background: var(--cor-2);
+  color: var(--cor-6);
+  text-transform: capitalize;
+}
+.btn-global i{
+  font-size: 0.8rem;
+  background: var(--cor-8);
+  padding:4px;
+  border-radius: 4px;
+}
+.btn-global:hover{
+  background: var(--cor-8);
+  transition: 0.4s ease-in;
+}
+.btn-global:hover i{
+  transform: translateY(4px);
+  transition: 0.4s ease-in;
+}

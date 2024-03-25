@@ -1,43 +1,50 @@
-.font-xxs{
-    font: 400 0.625rem/1.2 'Inter', sans-serif;
+.font-1-xxs{
+  font: 400 0.875rem / 1.2 'Roboto Slab', serif; /* Textos carroussel */
 }
-.font-xs-l,
-.font-xs,
-.font-xs-b{
-    font: 300 0.875rem/1.2 'Inter', sans-serif;
+.font-1-xs{
+    font: 400 1rem / 1.2 'Roboto Slab', serif; /* Textos */
 }
-
-.font-xs{
-    font-weight: 400;
+.font-1-s{
+  font: 500 1.2rem / 1.2 'Roboto Slab', serif; /* Textos em destaque */
 }
-.font-xs-b{
-    font-weight: 500;
+.font-1-m{
+  font: 400 1.5rem / 1.2 'Roboto Slab', serif; /* Texto paragrafo destaque */
 }
-
-.font-x{
-    font: 400 1rem/1.2 'Inter', sans-serif;
+.titulo-item{
+  text-transform: capitalize;
+  font: 500 2rem / 1.2 'Roboto Slab', serif; /* H4 itens */
 }
-
-.font-m{
-    font: 400 1.125rem/1.2 'Inter', sans-serif;
+.subt-section{
+  text-transform: capitalize;
+  font: 500 2.75rem / 1.2 'Roboto Slab', serif; /* h3 itens*/
 }
-
-.font-l{
-    font: 500 1.25rem/1.2 'Inter', sans-serif;
+.titulo-section{
+  text-transform: capitalize;
+  max-width: 10ch;
+  font: 500 3.7rem / 1.1 'Roboto Slab', serif; /* h2 section */
 }
-
-.font-xl{
-    font: 500 1.875rem/1.2 'Inter', sans-serif;
+.titulo-page{
+  font: 500 4.75rem/1'Roboto Slab', serif; /* h1 principal */
 }
-
-.font-xx{
-    font: 600 2.5rem/1.2 'Inter', sans-serif;
+.links{
+  font: 500 1rem / 1.2 'Roboto Slab', serif;
 }
-
-.font-xxl,
-.font-xxl-b{
-    font: 300 3.75rem/1.2 'Inter', sans-serif;
-}
-.font-xxl-b{
-    font-weight: 500;
+@media(max-width:1200px){
+  .titulo-page{
+    font-size: 3.75rem;
+  }
+} 
+@media (max-width: 800px) {
+  .titulo-page{
+    font-size: 2.6rem;
+  }
+  .titulo-section{
+    font-size: 2.2rem;
+  }
+  .subt-section{
+    font-size: 1.9rem;
+  }
+  .titulo-item{
+    font-size: 1.5rem;
+  }
 }

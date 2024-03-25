@@ -6,7 +6,6 @@
 .js [data-anime="down"] {
   transform: translate3d(0, -50px, 0);
 }
-
 /* Scroll animação para Cima */
 .js [data-anime="up"] {
   transform: translate3d(0, 50px, 0);
@@ -15,25 +14,11 @@
 [data-anime="left"] {
   transform: translate3d(-50px, 0, 0);
 }
-.js [data-anime="left"]:nth-child(2){
-  transition-delay: 400ms;
-}
-.js [data-anime="left"]:nth-child(3){
-  transition-delay: 700ms;
-}
-.js [data-anime="left"]:nth-child(4){
-  transition-delay: 1000ms;
-}
-
 /* Scroll animação para Direita */
 .js [data-anime="right"] {
   transform: translate3d(50px, 0, 0);
 }
-
 .js [data-anime].animate {
-      opacity: 1;
-      transform: translate3d(0,0,0);
+  opacity: 1;
+  transform: translate3d(0,0,0);
 }
-
-
-

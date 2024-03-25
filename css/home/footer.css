@@ -1,5 +1,35 @@
 .footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-items: flex-end;
+    padding: 100px 15px;
+    background: var(--cor-1);
+}
+.menu-footer{
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-footer ul{
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    gap: 10px;
+}
+.direitos-reservados{
+    padding: 5px;
+    text-align: center;
+    color: var(--cor-2);
+    background: var(--cor-6);
+    font: 300 0.775rem / 1.2 'Roboto Slab', serif;
+}
+@media(max-width:800px){
+    .footer{
+        justify-items: center;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
+    .menu-footer{
+        gap: 50px;
+    }
 }

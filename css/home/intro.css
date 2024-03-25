@@ -1,26 +1,41 @@
-.intro-bg {
-  background: var(--bg-global);
+.bg-intro{
+  background: var(--cor-6);
 }
 .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-between;
+  gap: 50px;
   min-height: 700px;
   background: linear-gradient(
     to right,
-    var(--cor-s3),
-    var(--cor-s2),
-    var(--cor-s1),
-    var(--cor-s3),
-    var(--cor-s2),
-    var(--cor-s3)
+    var(--cor-11),
+    var(--cor-10),
+    var(--cor-11)
   );
   background-size: 500% 100%;
-  animation: gradient-animado 4s infinite alternate;
+  animation: gradient-animado 4s infinite alternate ease-in;
   border-radius: 10px;
   padding: 15px;
+}
+.intro-topside{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.intro-txt{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.intro-txt > p{
+  max-width: 45ch;
 }
 @keyframes gradient-animado {
   0% {
@@ -33,24 +48,17 @@
     background-position-x: 100%;
   }
 }
-.intro h1 {
-  justify-self: center;
-  align-self: center;
+@media(max-width:1200px){
+  .intro-txt > p{
+    font-size: 1.25rem;
+  }
 }
-
 @media (max-width: 800px) {
   .intro {
     border-radius: 5px;
     gap: 50px;
   }
-  .intro h1,
-  .intro h1 span {
-    transition: 1s;
-    font-size: 2.125rem;
-  }
-  .intro-botoes {
-    display: grid;
-    align-items: center;
-    justify-content: center;
+  .intro-txt > p{
+    font-size: 1rem;
   }
 }

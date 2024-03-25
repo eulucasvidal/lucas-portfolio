@@ -1,30 +1,46 @@
 :root{
-    --cor-p1:#FFFFFF;
-    --cor-p2:#0D0D0D;
-
-    --bg-global:#FAFAF9;
-    --cor-s1:#F0EBE3;
-    --cor-s2:#C9C5BE;
-    --cor-s3:#737373;
+    --cor-1:#FFFFFF; /* cor do BG */
+    --cor-2:#FAFAFA; /* cor do BG e do texto */
+    --cor-3:#B2B2B2; /* cor do texto */
+    --cor-4:#707070; /* cor do texto */
+    --cor-5:#434245; /* cor do texto */
+    --cor-6:#000000; /* cor do BG */
+    --cor-7:#111111; /* cor do BG e do texto */
+    --cor-8:#FBBF24; /* cor dos detalhes ,linha, botoes, ponto */
+    --cor-9:#908C96; /* cor dos detalhe cor*/
+    --cor-10:#777777;/* cor do BG Gradiente */
+    --cor-11:#060606;/* cor do BG Gradiente */
 }
-/* Cores Primarias do Projeto */
-.cor-p1{
-    color: var(--cor-p1);
+.cor-1{
+  color: var(--cor-1);
 }
-.cor-p2{
-    color: var(--cor-p2);
+.cor-2{
+  color: var(--cor-2);
 }
-
-/* Cores Secundarias do Projeto */
-.bg-global{
-    background-color: var(--bg-global);
+.cor-3{
+  color: var(--cor-3);
 }
-.cor-s1{
-    color: var(--cor-s1);
+.cor-4{
+  color: var(--cor-4);
 }
-.cor-s2{
-    color: var(--cor-s2);
+.cor-5{
+  color: var(--cor-5);
 }
-.cor-s3{
-    color: var(--cor-s3);
+.cor-6{
+  color: var(--cor-6);
+}
+.cor-7{
+  color: var(--cor-7);
+}
+.cor-8{
+  color: var(--cor-8);
+ }
+.cor-9{
+  color: var(--cor-9);
+ }
+.cor-10{
+  color: var(--cor-10);
+}
+.cor-11{
+  color: var(--cor-11);
 }

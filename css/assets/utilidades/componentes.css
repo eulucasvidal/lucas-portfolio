@@ -1,49 +1,83 @@
 .container{
-    max-width: 1260px;
-    padding: 30px;
+    max-width: 1600px;
+    padding:15px;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
 }
-.logo{
-    font: 500 1.125rem/1.2 'Inter', sans-serif;
-    text-transform: uppercase;
+.detalhe-ponto{
+    position: relative;
 }
-.detalhe{
-    color:#FBBF24;
-    border-bottom: 1px solid currentColor;
+.detalhe-ponto::after{
+    content: '';
+    position: absolute;
+    bottom: 10px;
+    margin-left: 4px;
+    height: 7px;
+    width: 7px;
+    box-sizing: border-box;
+    background-color: #FFBB00;
 }
-
-.titulo{
-    font: 300 3.75rem/1.2 'Inter', sans-serif;
-    text-align: center;
-    max-width: 28ch;
+.detalhe-linha{
+    position: relative;
 }
-.subt-h3{
-    font: 500 1.875rem/1.2 'Inter', sans-serif;
-    text-transform: uppercase;
+.detalhe-linha::after{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    height: 3px;
+    width: 60px;
+    background-color: #FFBB00;
+    box-sizing: border-box;
 }
-.subt-h3 span{
-    color: var(--cor-s3);
+.detalhe-cor{
+    color: #908C96;
 }
-.container-social-midia{
+.detalhe-link{
+    position: relative;
+    cursor: pointer;
+}
+.detalhe-link::after{
+    content: '';
+    box-sizing: border-box;
+    width: 10px;
+    height: 3px;
+  
+    background: var(--cor-8);
+  
+    top: 50%;
+    left: -20px;
+    position: absolute;
+}
+.detalhe-link:hover::after{
+    background: var(--cor-8);
+    width: 15px;
+}
+.redes-sociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.box-redes-sociais{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 15px;
     text-transform: uppercase;
-    color: var(--cor-s3);
 }
-.social-midia {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 45px;
-  }
-
-@media(max-width:800px){
-    .container{
-        padding: 15px;
+@media (max-width: 800px) {
+    .detalhe-ponto::after{
+        bottom: 7px;
+        height: 5px;
+        width: 5px;
+    }
+    .detalhe-linha::after{
+        top:30px;
+        height: 2px;
+        width: 30px;
     }
 }
